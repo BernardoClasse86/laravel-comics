@@ -1,0 +1,224 @@
+@import '../_variables';
+@import '../resets';
+
+.blu-banner {
+    padding: 2rem 0;
+    background-color: $active-lnk-color;
+    position: relative;
+}
+
+.banner.comic {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.comic-card {
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+
+    .comic-card-content {
+        position: relative;
+
+        .comic-cover {
+            width: 200px;
+            border: 1px solid white;
+        }
+
+        .product-type {
+            text-transform: uppercase;
+            color: white;
+            font-size: 0.875rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0.25rem 0.5rem;
+            background-color: $comic-content-color;
+        }
+
+        .comic-gallery {
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 0.875rem;
+            position: absolute;
+            bottom: 0.5rem;
+            padding: 0.25rem 0.5rem;
+            background-color: $comic-content-color;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.comic-container {
+    padding: 4.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        .col-8 {
+            flex-basis: calc(100% * (8/12));
+
+            .comic-title {
+                padding-bottom: 1.5rem;
+                font-size: 1.5rem;
+                color: $comic-title-color;
+                text-transform: uppercase;
+            }
+
+            .row.price-banner {
+                padding: 0rem 1.5rem;
+                background-color: $comic-price-banner;
+                font-weight: bold;
+                border-bottom: 1px solid black;
+
+                .col-9.row {
+                    flex-basis: calc(100% * (9/12));
+                    justify-content: space-between;
+                    padding: 1rem 0;
+                    border-right: 1px solid black;
+                    color: rgba(255, 255, 255, 0.7);
+
+                    .price-tag {
+                        color: white;
+                    }
+
+                    .availability {
+                        text-transform: uppercase;
+                        padding-right: 1.5rem;
+                    }
+                }
+
+                .col-3 {
+                    flex-basis: calc(100% * (3/12));
+                    padding: 1rem 0;
+
+                    .availability-check {
+                        text-transform: capitalize;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+            .comic-desc {
+                padding: 1.25rem 0;
+            }
+        }
+
+        .col-4 {
+            flex-basis: calc(100% * (4/12));
+            position: relative;
+
+            .adv-spec {
+                display: flex;
+                justify-content: end;
+            }
+
+            .adv-thumb {
+                width: 350px;
+            }
+
+        }
+
+        .text {
+            text-align: right;
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $adv-text;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.spec-bg {
+    background-color: $spec-background;
+    position: relative;
+    z-index: 2;
+}
+
+.spec-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem 6rem;
+
+    .spec-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .col-6 {
+            flex-basis: calc(100% * (6/12));
+            flex-shrink: 0;
+
+            .desc-title {
+                padding-bottom: 1.875rem;
+                border-bottom: 1px solid $spec-border;
+                font-size: 1.5rem;
+                color: $comic-title-color;
+            }
+
+            .row-talent {
+                display: flex;
+                justify-content: space-between;
+                gap: 8rem;
+                border-bottom: 1px solid $spec-border;
+                padding: 0.875rem 0;
+
+                .talent-title {
+                    flex-basis: calc(100% * (2/12));
+                    color: $comic-title-color;
+                }
+
+                .row-talent-name {
+                    display: flex;
+                    flex-basis: calc(100% * (10/12));
+                    font-size: 0.875rem;
+                    gap: 0.25rem;
+                    flex-wrap: wrap;
+
+                    .talent-name {
+                        font-weight: bold;
+                        line-height: 0.75rem;
+                        color: $comic-content-color;
+                    }
+                }
+
+            }
+
+            .row-spec {
+                border-bottom: 1px solid $spec-border;
+                padding: 0.875rem 0;
+                display: flex;
+                align-items: center;
+
+                .spec-title {
+                    flex-basis: calc(100% * (4/12));
+                    color: $comic-title-color;
+                }
+
+                .spec-comic {
+                    flex-basis: calc(100% *(8/12));
+                }
+
+                .spec-comic.type {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $comic-content-color;
+                }
+            }
+
+
+
+        }
+
+
+    }
+}

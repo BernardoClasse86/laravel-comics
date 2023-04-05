@@ -1,0 +1,111 @@
+@import '../_variables';
+@import '../resets';
+
+.main-content {
+    background-color: $main-bg-color;
+}
+
+.hero {
+    background-image: url(../img/main/jumbotron.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 440px;
+}
+
+.comics-content {
+    padding: 3rem 2rem;
+    position: relative;
+
+    .comic-series {
+        position: absolute;
+        top: -24px;
+        left: 160px;
+        padding: 0.5rem 2rem;
+        background-color: $merch-bar-color;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .comics-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        font-size: 0.75rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0.5rem;
+    }
+}
+
+.main-btn {
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: $active-lnk-color;
+}
+
+.comics-card {
+    padding: 0.25rem;
+
+    .comic__thumb {
+        aspect-ratio: 0.75;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 1rem;
+    }
+
+    .card__title {
+        text-align: center;
+        font-size: 1rem;
+        color: white;
+        font-weight: bold;
+    }
+}
+
+//MERCH
+
+.merch-outro {
+    background-color: $merch-bar-color;
+    position: relative;
+    z-index: 2;
+}
+
+.merch {
+    padding: 3rem 5rem;
+}
+
+.merch-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.merch__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .merch-item__thumb {
+        aspect-ratio: 1;
+        width: 4rem;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .merch-item__text {
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}

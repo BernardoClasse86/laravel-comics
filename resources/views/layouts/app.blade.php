@@ -398,9 +398,9 @@
 
     @include('partials.header')
 
-    <main>
+    <section>
         @yield('main')
-    </main>
+    </section>
 
     @include('partials.footer')
 
