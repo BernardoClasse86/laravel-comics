@@ -129,6 +129,58 @@
 
     </div>
 
+    <div class="merch-banner">
+
+        <div class="merch-container">
+
+            <div class="merch-row">
+
+                <div class="merch-col-3 border-right">
+                    <div class="merch-item">
+                        digital comics
+                    </div>
+
+                    <div>
+                        <img class="merch-thumb" src={{ Vite::asset('resources/img/main/buy-comics-digital-comics.png')}} alt="">
+                    </div>
+                </div>
+
+                <div class="merch-col-3 border-right">
+                    <div class="merch-item">
+                        shop dc
+                    </div>
+
+                    <div>
+                        <img class="merch-thumb" src={{ Vite::asset('resources/img/main/buy-comics-merchandise.png')}} alt="">
+                    </div>
+                </div>
+
+                <div class="merch-col-3 border-right">
+                    <div class="merch-item">
+                        comic shop locator
+                    </div>
+
+                    <div>
+                        <img class="merch-thumb" src={{ Vite::asset('resources/img/main/buy-comics-shop-locator.png')}} alt="">
+                    </div>
+                </div>
+
+                <div class="merch-col-3">
+                    <div class="merch-item">
+                        subscriptions
+                    </div>
+
+                    <div>
+                        <img class="merch-thumb" src={{ Vite::asset('resources/img/main/buy-comics-subscriptions.png')}} alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
 
 </main>
 

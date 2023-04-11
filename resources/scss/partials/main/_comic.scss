@@ -1,6 +1,7 @@
 @import '../_variables';
 @import '../resets';
 
+//BANNER
 .blu-banner {
     padding: 2rem 0;
     background-color: $active-lnk-color;
@@ -52,6 +53,10 @@
     }
 
 }
+
+// /BANNER
+
+// COMIC DETAILS
 
 .comic-container {
     padding: 4.5rem 2rem;
@@ -138,6 +143,10 @@
     }
 }
 
+// /COMIC DETAILS
+
+// COMIC SPEC
+
 .spec-bg {
     background-color: $spec-background;
     position: relative;
@@ -215,10 +224,56 @@
                 }
             }
 
-
-
         }
-
 
     }
 }
+
+// /COMIC SPEC
+
+// COMIC MERCH
+
+.merch-banner {
+    border-top: 1px solid $spec-border;
+    background-color: $spec-background;
+    position: relative;
+    z-index: 2;
+
+    .merch-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+        .merch-row {
+            display: flex;
+            border-left: 1px solid $spec-border;
+            border-right: 1px solid $spec-border;
+
+            .border-right {
+                border-right: 1px solid $spec-border;
+            }
+
+            .merch-col-3 {
+                flex-basis: calc(100% * (3/12));
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+
+                .merch-item {
+                    text-transform: uppercase;
+                    font-size: 0.75rem;
+                    font-weight: bold;
+                    color: grey;
+                }
+
+                .merch-thumb {
+                    width: 40px;
+                    aspect-ratio: 1;
+                }
+
+            }
+        }
+    }
+}
+
+// /COMIC MERCH
